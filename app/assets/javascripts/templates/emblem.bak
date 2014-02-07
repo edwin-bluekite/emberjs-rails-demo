@@ -1,4 +1,0 @@
-#container Test
-h1 Ember.js application with emblem
-p This is a ember.js generated application
-Ember.TextField valueBinding="holaMundo"
