@@ -22,7 +22,7 @@ gem 'therubyrhino'
 gem "jquery-rails", "~> 2.3.0"
 gem 'haml'
 gem "haml-rails"
-gem "ember-rails"
+gem "ember-rails", github: "emberjs/ember-rails"
 gem 'emblem-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
