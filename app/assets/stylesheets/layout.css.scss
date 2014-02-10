@@ -58,6 +58,10 @@ button {
   margin: 20px auto;
 }
 
+button[disabled=disabled], button:disabled {
+  color: blue;
+  background: #CCCCCC;
+}
 h1 {
   text-align: center;
   font-size: 40px;

@@ -7,9 +7,12 @@ Training.EntriesController = Ember.ArrayController.extend
                         @set "addEntry", ""
                 drawWinner: ->    
                         @setEach('highlight', false)
-                        pool = @rejectProperty('winner')
+                        pool = @rejectBy 'winner'
                         if pool.length > 0
                                 entry = pool[Math.floor(Math.random()*pool.length)]
                                 entry.set "winner", true
                                 entry.set "highlight", true
-                                @get('store').commit
+                                entry.save()
+        AllWinners: (-> 
+                @isEvery 'winner'
+                ).property '@each.winner'
