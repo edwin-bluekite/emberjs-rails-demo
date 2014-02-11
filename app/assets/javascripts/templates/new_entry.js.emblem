@@ -1,2 +1,5 @@
+
+
+
 Ember.TextField valueBinding="addEntry"
-button type="submit" Enviar
+input type="submit" value="Enviar"
