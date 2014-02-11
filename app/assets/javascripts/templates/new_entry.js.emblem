@@ -1,2 +1,2 @@
-Ember.TextField valueBinding="addEntry"
+Ember.TextField valueBinding="view.addEntry"
 input type="submit" value="Enviar"

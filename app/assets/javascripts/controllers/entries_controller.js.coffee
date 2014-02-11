@@ -1,10 +1,9 @@
 Training.EntriesController = Ember.ArrayController.extend
         actions: 
-                newEntry: -> 
+                newEntry: (name) -> 
                         #@pushObject Ember.Object.create name: @get "addEntry"
-                        @entry = @store.createRecord 'entry', {name: @get "addEntry"}
+                        @entry = @store.createRecord 'entry', {name: name}
                         @entry.save()
-                        @set "addEntry", ""
                 drawWinner: ->    
                         @setEach('highlight', false)
                         pool = @rejectBy 'winner'
