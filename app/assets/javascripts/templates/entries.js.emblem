@@ -1,8 +1,8 @@
-Ember.TextField valueBinding="addEntry" action="newEntry"
-  p = addEntry
-  ul
-    each controller
-      li = name
-      if winner 
-        span.{bind-attr class="highlight winner"} WINNER
-  button{action "drawWinner"}{bind-attr disabled="AllWinners"} Seleccionar Ganador
+Training.NewEntryView
+p = addEntry
+ul
+  each controller
+    li = name
+    if winner 
+      span.{bind-attr class="highlight winner"} WINNER
+button{action "drawWinner"}{bind-attr disabled="AllWinners"} Seleccionar Ganador

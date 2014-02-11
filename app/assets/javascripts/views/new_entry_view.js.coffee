@@ -3,8 +3,7 @@ Training.NewEntryView = Ember.View.extend
         templateName: 'new_entry'
         tagName: 'form'
         submit: ->
-                console.log "dddddddddd"
-                consloe.log @get('controller').send('addEntry')
+                @get('controller').send('newEntry')
                 false
         click: ->
                 console.log "hello world"
