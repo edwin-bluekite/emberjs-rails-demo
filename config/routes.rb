@@ -1,12 +1,12 @@
 Training::Application.routes.draw do
-  resources :entries
+  namespace :api do
+    
+    resources :entries
 
-  get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'application#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -56,4 +56,9 @@ Training::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  end
+  
+  root 'application#index'
+  get "welcome/index"
+
 end
